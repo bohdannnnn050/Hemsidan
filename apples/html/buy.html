@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+
+    <title>Accessibility assessment</title>
+    <link href="../css/buy.css"rel="stylesheet">
+    <link href="../js/home.js"rel="stylesheet">
+ 
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  
+  </head>
+
+  <body>
+  
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<a href="home.html" target="_blank">
+    <img src="../bilder/best.png" class="logo">
+  </a>
+
+        <a name="main_content_access" id="main_content" tabindex="-1"></a>
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="fstt.html">From Seed To Tree</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="trees.html">TREES</a></li>
+      </ul>
+      
+    </div>
+
+    <div class="header">
+        <h1>Buy Seeds</h1>
+      </div>
+
+    <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="../bilder/1.jpg"></div>
+    <div class="swiper-slide"><img src="../bilder/3.jpg"></div>
+    <div class="swiper-slide"><img src="../bilder/best forest.jpg"></div>
+    <div class="swiper-slide"><img src="../bilder/Various-Tree-Seeds.jpg"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+    </div>
+
+<script>
+const swiper = new Swiper('.swiper', {
+autoplay: {
+  delay: 3000,
+  disableOnInteraction: false,
+},
+
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
+
+
+</script>
+
+<a class="seeds" href="https://www.treeseeds.com/">Tree Seeds</a>
+  </body>
+
+  

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/contact.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/bc3d6de573.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <a href="home.html" target="_blank">
+        <img src="../bilder/best.png" class="logo">
+      </a>
+    
+
+    <div class="nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="fstt.html">From Seed To Tree</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="trees.html">TREES</a></li>
+        </ul>
+        
+      </div>
+    
+ 
+
+  <h1 class="contact"> Contact & About </h1>
+  <h2 class="me">Bohdan Yakimets</h2>
+
+
+
+<div class="hero">
+<h1 class="nano">Social Media</h1>
+
+<div class="social-links">
+    <a href="https://www.instagram.com/bohdan_y05/"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.youtube.com/results?search_query=about+apple+trees"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100011392130620"><i class="fa-brands fa-facebook"></i></a>
+
+</div>
+</div>
+
+
+
+
+<h1></h1>
+  
+<div class="container">
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get In Touch</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email Id" required>
+        <input type="text" id="phone" placeholder="Phone no." required>
+        <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "yakimetsbohdan05@gmail.com",
+    Password : "XJTygg11",
+    To : 'yakimetszahar15@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "Name: " + document.getElementById("name").value
+      + "<br> Email: "+ document.getElementById("email").value
+      + "<br> Phone no: "+ document.getElementById("phone").value
+      + "<br> Message: "+ document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Seccesfully")
+);
+    }
+</script>
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
